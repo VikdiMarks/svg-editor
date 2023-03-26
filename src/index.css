@@ -11,3 +11,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0;
+
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #FFFFFF;
+
+  background-color: rgb(221, 240, 230);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+
+  background: none;
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* BUTTONS */
+button {
+  padding: 0;
+
+  cursor: pointer;
+}
+
+/* METHOD DRAWS */
+.method-draw {
+  width: 100%;
+  height: 40px;
+  position: relative;
+
+  background-color: rgb(83, 133, 105);
+}
+
+/* LEFT TOOLS */
+.left-tools {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 40px;
+  height: calc(100vh - 40px);
+  padding-top: 20px;
+
+  background-color: rgb(83, 133, 105);
+
+  top: 100%;
+  left: 0;
+
+  z-index: 111;
+}
+
+/* TOOLS BUTTON */
+.tools-button {
+  height: 17px;
+  width: 17px;
+
+  color: rgb(225, 231, 226);
+
+  transition: color .3s ease;
+}
+
+.tools-button:visited {
+  color: rgb(84, 88, 86);
+}
+
+.tools-button:focus {
+  color: rgb(84, 88, 86);
+}
+
+.tools-button:hover {
+  color: rgb(84, 88, 86);
+}
+
+.tools-button:active {
+  color: rgb(84, 88, 86);
+}
+
+.tools-button svg {
+  width: 100%;
+  height: 100%;
+}
